@@ -1,0 +1,17 @@
+
+<table> 
+	<tr>
+		<th> Title  </th>
+		<th> Text </th>
+	</tr>
+
+<% @articles.each do |article| %>
+	<tr>
+		<td> <%= article.title %> </td>
+		<td> <%= article.text %> </td>
+	</tr>
+<% end %> 
+</table>
+<br>
+<%= link_to 'Home Page', root_path %><br>
+<%= link_to 'New article', new_article_path %>
